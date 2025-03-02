@@ -9,7 +9,7 @@ USER root
 # Update & Upgrade OS
 RUN apt-get update
 #RUN apt-get -y upgrade
-RUN apt-get -y install maven \
+RUN apt-get -y install maven-3.5.0 \
 && unlink /usr/bin/mvn \
 && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 
